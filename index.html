@@ -1,0 +1,456 @@
+﻿<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  
+  </head>
+<body>
+   <div class="container-fluid" id="navbar">
+      <div class="container">
+         <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#"><img src="images/1.png" class="img-fluid" id="logo"></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mx-auto">
+                    <li class="nav-item pr-lg-2">
+                    <a class="nav-link text-light" href="#">Home</a>
+                    </li>
+                    <li class="nav-item pr-lg-2">
+                         <a class="nav-link text-light" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item pr-lg-2">
+                        <a class="nav-link text-light" href="#Services">Services</a>
+                    </li>
+                    <li class="nav-item pr-lg-2">
+                        <a class="nav-link text-light" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="form-inline my-2 my-lg-0">
+                     <i class="fa fa-search text-light mr-4" id="search-icon" aria-hidden="true"></i>
+                     <button class="btn btn-sm btn-outline-light mr-2 rounded-0" id="dark-btn" onclick="Darkmode()">Dark</button>
+                </div>
+            </div>
+         </nav>
+      </div>
+   </div>
+
+
+
+
+
+
+
+
+
+   <div class="container-fluid px-0" id="header">
+       <div id="demo" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" id="slider-one">
+              <div class="carousel-item active text-center" id="top-slider">
+                <input type="text" class="form-control form-control-sm pl-4 w-50 mx-auto" placeholder="Search" id="nav-search">
+                   <h1 class="text-light font-weight-bold" style="font-size: 75px">CarkeyB</h1>
+                   <a class="btn btn-outline-primary text-light mt-4 big-btn" style="font-size: 30px" href="#contact" class="">CONTACT US<a>
+
+               </div>
+               <div class="carousel-item text-center" id="top-slider">
+                <input type="text" class="form-control form-control-sm pl-4 w-50 mx-auto" placeholder="Search" id="nav-search1">
+                   <h1 class="text-light font-weight-bold" style="font-size: 75px">CarkeyB</h1>
+                    <a class="btn btn-outline-primary text-light mt-4 big-btn" style="font-size: 30px" href="#contact">CONTACT US</a>
+               </div>
+               <div class="carousel-item text-center" id="top-slider">
+                <input type="text" class="form-control form-control-sm pl-4 w-50 mx-auto" placeholder="Search" id="nav-search2">
+                   <h1 class="text-light font-weight-bold" style="font-size: 75px">CarkeyB</h1>
+                   <a class="btn btn-outline-primary text-light mt-4 big-btn" style="font-size: 30px" href="#contact">CONTACT US</a>
+               </div>
+          </div>
+        <!-- Left and right controls -->
+           <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span><i class="fa fa-long-arrow-left text-light" aria-hidden="true"></i></span>
+           </a>
+           <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span><i class="fa fa-long-arrow-right text-light" aria-hidden="true"></i></span>
+           </a>
+       </div>
+   </div>
+
+
+
+   <div class="py-5 border-bottom" id="about">
+    <div class="container py-5">
+      <div class="row h-100 align-items-center py-5">
+        <div class="col-lg-6">
+          <h1 class="display-4">About us</h1>
+          <p class="font-italic text-muted mb-0">
+            We are a local business that prides itself on providing exceptional customer service when solving car key related issues.
+          </p>
+        </div>
+        <div class="col-lg-6 d-none d-lg-block"><img src="images/bg.jpg" alt="" class="img-fluid"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<div class="container py-5">
+  <div id="carousel3d" class="py-5">
+    <carousel-3d :perspective="0" :space="200" :display="5" :controls-visible="true" :controls-prev-html="'❬'" :controls-next-html="'❭'" :controls-width="30" :controls-height="60" :clickable="true" :autoplay="true" :autoplay-timeout="5000">
+      <slide :index="0">
+        <img src="images/4.jpg">
+
+      </slide>
+      <slide :index="1">
+        <img src="images/5.jpg">
+
+      </slide>
+      <slide :index="2">
+        <img src="images/6.jpg">
+
+      </slide>
+      <slide :index="3">
+        <img src="images/7.png">
+
+      </slide>
+      <slide :index="4">
+        <img src="images/8.jpg">
+
+      </slide>
+      <slide :index="5">
+        <img src="images/9.png">
+
+      </slide>
+      <slide :index="6">
+        <img src="images/10.jpg">
+
+      </slide>
+      <slide :index="7">
+        <img src="images/11.png">
+
+      </slide>
+      <slide :index="8">
+        <img src="images/12.png">
+
+      </slide>
+
+    </carousel-3d>
+  </div>
+</div>
+</div>
+
+
+<div class=" py-5 border-bottom border-top pt-5" id="Services">
+  <div class="container py-5">
+    <h1 class="display-4 mb-5">Services</h2>
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6 order-2 order-lg-1"><i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
+        <h2 class="font-weight-light">Car key Programming</h2>
+        <p class="font-italic text-muted mb-4">HAVE YOU LOST ALL OF YOUR CAR KEYS?</p><a href="#contact" class="btn btn-light px-5 rounded-pill shadow-sm">Contact Us</a>
+      </div>
+      <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="images/bg10.jpg" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+    </div>
+    <div class="row align-items-center py-5">
+      <div class="col-lg-5 px-5 mx-auto"><img src="images/unnamed.png" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+      <div class="col-lg-6"><i class="fa fa-leaf fa-2x mb-3 text-primary"></i>
+        <h2 class="font-weight-light">cutting of spare car keys</h2>
+        <p class="font-italic text-muted mb-4">NEED A NEW CAR KEY BLADE? WE CAN HELP!</p><a href="#contact" class="btn btn-light px-5 rounded-pill shadow-sm">Contact Us</a>
+      </div>
+    </div>
+    <div class="row align-items-center my-5">
+      <div class="col-lg-6 order-2 order-lg-1"><i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
+        <h2 class="font-weight-light">Remote Programming</h2>
+        <p class="font-italic text-muted mb-4">WHERE YOU PROVIDED A CAR KEY BUT IT WASN'T PROGRAMMED?</p><a href="#contact" class="btn btn-light px-5 rounded-pill shadow-sm">Contact Us</a>
+      </div>
+      <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="images/bg2.png" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-lg-5 px-5 mx-auto"><img src="images/bg3.jpg" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+      <div class="col-lg-6"><i class="fa fa-leaf fa-2x mb-3 text-primary"></i>
+        <h2 class="font-weight-light">Programming Proximity Fobs</h2>
+        <p class="font-italic text-muted mb-4">IS YOUR PROXIMITY FOB NOT WORKING?</p><a href="#contact" class="btn btn-light px-5 rounded-pill shadow-sm">Contact Us</a>
+      </div>
+    </div>
+    <div class="row align-items-center my-5">
+      <div class="col-lg-6 order-2 order-lg-1"><i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
+        <h2 class="font-weight-light">Replacing Old or Damaged Shells</h2>
+        <p class="font-italic text-muted mb-4">IS YOUR CAR KEY WORN OUT? CONTACT US TODAY FOR A REPLACEMENT SHELL!</p><a href="#contact" class="btn btn-light px-5 rounded-pill shadow-sm">Contact Us</a>
+      </div>
+      <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="images/bg4.jpg" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-lg-5 px-5 mx-auto"><img src="images/bg5.jpg" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+      <div class="col-lg-6"><i class="fa fa-leaf fa-2x mb-3 text-primary"></i>
+        <h2 class="font-weight-light">DO YOU HAVE A BLADE THAT NEEDS CUTTING?</h2>
+        <p class="font-italic text-muted mb-4"> </p><a href="#contact" class="btn btn-light px-5 rounded-pill shadow-sm">Contact Us</a>
+      </div>
+    </div>
+    <div class="row align-items-center my-5">
+      <div class="col-lg-6 order-2 order-lg-1"><i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
+        <h2 class="font-weight-light">HAS YOUR BUTTONS STOPPED WORKING?</h2>
+        <p class="font-italic text-muted mb-4"> </p><a href="#contact" class="btn btn-light px-5 rounded-pill shadow-sm">Contact Us</a>
+      </div>
+      <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="images/bg6.jpg" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-lg-5 px-5 mx-auto"><img src="images/bg7.jpg" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+      <div class="col-lg-6"><i class="fa fa-leaf fa-2x mb-3 text-primary"></i>
+        <h2 class="font-weight-light">IS YOUR BATTERY RUNNING LOW?</h2>
+        <p class="font-italic text-muted mb-4"> </p><a href="#contact" class="btn btn-light px-5 rounded-pill shadow-sm">Contact Us</a>
+      </div>
+    </div>
+    <div class="row align-items-center my-5">
+      <div class="col-lg-6 order-2 order-lg-1"><i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
+        <h2 class="font-weight-light">DO YOU NEED AN ADDITIONAL REMOTE FOR YOUR ELECTRIC SCOOTER?</h2>
+        <p class="font-italic text-muted mb-4"> </p><a href="#contact" class="btn btn-light px-5 rounded-pill shadow-sm">Contact Us</a>
+      </div>
+      <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="images/bg8.jpg" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+    </div>
+  </div>
+</div>
+<section class="container mt-5 py-5" id="contact">
+  <!--Contact heading-->
+  <div class="row">
+     <!--Grid column-->
+     <div class="col-sm-12 mb-4 col-md-6 bg-dark pt-4">
+        <!--Form with header-->
+        <div class="card border-secondary rounded-0">
+           <div class="card-header p-0">
+              <div class="bg-dark text-white text-center py-2">
+                 <h3><i class="fa fa-envelope"></i> Contact us</h3>
+                 <p class="m-0 font-italic">We’ll write rarely, but only the best content.</p>
+              </div>
+           </div>
+           <div class="card-body p-3">
+              
+                 <div class="form-group">
+                 <label class="font-italic"> Your name </label>
+                 <div class="input-group">
+                    <input value="" type="text" name="data[name]" class="form-control rounded-0" id="inlineFormInputGroupUsername" placeholder="Your name">
+                 </div>
+                </div>
+                 <div class="form-group">
+                    <label class="font-italic">Phone Number</label>
+                    <div class="input-group mb-2 mb-sm-0">
+                       <input type="email" value="" name="data[email]" class="form-control rounded-0" id="inlineFormInputGroupUsername" placeholder="Phone Number">
+                    </div>
+                 </div>
+                 <div class="form-group">
+                  <label class="font-italic"> Model Number </label>
+                  <div class="input-group">
+                     <input value="" type="text" name="data[name]" class="form-control rounded-0" id="inlineFormInputGroupUsername" placeholder="Model year registration of car">
+                  </div>
+                 </div>
+                 <div class="form-group">
+                  <label class="font-italic"> Car Number </label>
+                  <div class="input-group">
+                     <input value="" type="text" name="data[name]" class="form-control rounded-0" id="inlineFormInputGroupUsername" placeholder="Number of Car">
+                  </div>
+                 </div>
+                 <div class="text-center">
+                    <input type="submit" name="submit" value="submit" class="btn btn-outline-dark btn-block rounded-0 py-2">
+                 </div>
+            
+          </div>
+         
+           </div>
+        </div>
+     <!--Grid column-->
+   
+     <!--Grid column-->
+     <div class="col-sm-12 col-md-6">
+        <!--Google map-->
+        <div class="mb-4">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d303726.84766803595!2d-2.600257195618814!3d53.50658912028477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487ba654d3882eb1%3A0x2cc7d82221c68081!2sGreater%20Manchester%2C%20UK!5e0!3m2!1sen!2s!4v1619896240000!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <!--Buttons-->
+        <div class="row text-center">
+           <div class="col-md-4">
+              <a class="bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block"><i class="fa fa-map-marker"></i></a>
+              <p class="font-italic"> Your Address ….. </p>
+           </div>
+           <div class="col-md-4">
+              <a class="bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block"><i class="fa fa-phone"></i></a>
+              <p class="font-italic">+1- 90000000</p>
+           </div>
+           <div class="col-md-4">
+              <a class="bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block"><i class="fa fa-envelope"></i></a>
+              <p class="font-italic"> your@gmail.com</p>
+           </div>
+        </div>
+     </div>
+     <!--Grid column-->
+     </div>
+</section>
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4 bg-dark text-light">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <img src="images/1.png" class="img-fluid w-75">
+        <p class="mt-5">
+          <i class="fa fa-facebook-f mr-3"></i>
+          <i class="fa fa-twitter mr-3"></i>
+          <i class="fa fa-google mr-3"></i>
+          <i class="fa fa-linkedin mr-3"></i>
+          <i class="fa fa-pinterest"></i>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mb-md-0 mb-3 px-5 float-left">
+
+        <ul class="list-unstyled mb-5">
+          <li class="list-inline-item">
+            <a href="#!" class="text-light text-uppercase">About</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#!" class="text-light text-uppercase">Services</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#!" class="text-light text-uppercase">Contact</a>
+          </li>
+        </ul>
+        <span class="font-weight-bold mt-5">SUBSCRIBE TO NEWS</span>
+        <form class="input-group mt-3">
+          <input type="text" class="form-control form-control-sm rounded-0" placeholder="Your email"
+                 aria-label="Your email" aria-describedby="basic-addon2">
+          <div class=" ml-3">
+            <button class="btn btn-sm btn-outline-white my-0 border-0 py-2 px-5 rounded-0" type="button">Submit</button>
+          </div>
+        </form>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Contact Us</h5>
+         <p>
+           San Francisco, California
+           400 Castro St, San Francisco, CA
+           (+1) 686-868-9999
+
+         </p>
+        <ul class="list-unstyled mb-5">
+          <li class="list-inline-item">
+            <a href="#!" class="text-light"><img src="images/20.png"></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#!" class="text-light"><img src="images/21.png"></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#!" class="text-light"><img src="images/22.png"></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#!" class="text-light"><img src="images/23.png"></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#!" class="text-light"><img src="images/24.png"></a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+</footer>
+<!-- Footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script> 
+function Darkmode() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+  var x = document.getElementById("dark-btn");
+  if (x.innerHTML === "Dark") {
+    x.innerHTML = "Light";
+  } else {
+    x.innerHTML = "Dark";
+  }
+}
+</script>
+
+
+
+
+<script src='js/slider1.js'></script>
+<script src='js/slider2.js'></script>
+
+<script >
+  new Vue({
+  el: '#carousel3d',
+  data: {
+    slides: 8
+  },
+  components: {
+    'carousel-3d': Carousel3d.Carousel3d,
+    'slide': Carousel3d.Slide
+  }
+});
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+
+     $("#search-icon").click(function(){
+     $("#nav-search").toggle(1000);
+     $("#nav-search1").toggle(1000);
+     $("#nav-search2").toggle(1000);
+
+});
+  });
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("logo").width = "150";
+  } else {
+    document.getElementById("logo").width = "300";
+  }
+}
+</script>
+
+<script type="text/javascript" src="bootstrap js/bootstrap.min.js"></script>
+</body>
+</html>

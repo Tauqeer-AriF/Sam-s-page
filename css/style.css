@@ -1,0 +1,120 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+
+@font-face {
+    font-family:'Montserrat-Black';
+    src: url('../fonts/Montserrat-Black.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family:'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../fonts/Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+#nav-search{
+    display: none;
+    height: 50px;
+}
+
+#nav-search1{
+    display: none;
+    height: 50px;
+}
+#nav-search2{
+    display: none;
+    height: 50px;
+}
+.fa-long-arrow-left,.fa-long-arrow-right{
+    font-size: 50px;
+}
+.fa-search{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.container{font-family: 'Montserrat-Medium';}
+#navbar{
+    font-family: 'Montserrat-Medium';
+    background: rgba(0, 0, 0, 0.5) !important;
+    position: fixed;
+    z-index: 999;
+   }
+.navbar-brand img{
+    width: 300px;
+}
+#header{
+    font-family: 'Montserrat-Medium';
+}
+
+#carousel3d .carousel-3d-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+#carousel3d .carousel-3d-slide.current {
+    background-color: #fff;
+    color: #fff;
+}
+#carousel3d .carousel-3d-slide.current span {
+    font-size: 20px;
+    font-weight: 500;
+}
+footer{
+    font-family: 'Montserrat-Medium';
+}
+
+#top-slider{
+    font-family: 'Montserrat-Black';
+    background-image: url(../images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 400px;
+    padding-bottom: 400px;
+}
+img{
+    transition: 1s;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.dark-mode {
+    background-color: black !important;
+    color: white;
+  }
+@media only screen and (max-width: 600px) {
+    .navbar-brand img{
+        width: 150px;
+    }
+}
